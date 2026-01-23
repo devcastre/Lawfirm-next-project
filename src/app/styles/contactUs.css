@@ -1,0 +1,18 @@
+:root {
+  --background: #2A0B12;
+
+  --primaryColor: #550C20;
+  --secondaryColor: #1A050C;
+  
+}
+
+.contact-form{
+    background: var(--primaryColor);
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-input, .contact-textarea, .contact-submit{
+    background: var(--background);
+    border: none;
+}

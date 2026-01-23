@@ -1,0 +1,35 @@
+
+
+.nav-anim {
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+
+.nav-anim::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+
+.nav-anim:hover::after {
+  width: 100%;
+}
+
+
+.active-link {
+  color: white !important;
+  font-weight: 600;
+}
+
+
+.active-link::after {
+  width: 100%;
+}

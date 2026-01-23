@@ -1,0 +1,335 @@
+[
+  {
+    "id": "kamala-harris",
+    "name": "Kamala Harris",
+    "role": "Family Lawyer",
+    "img": "/team/Atty1.jpg",
+    "practiceAreas": [
+      "Family Law",
+      "Divorce & Separation",
+      "Child Custody",
+      "Adoption Law"
+    ],
+    "socialLinks": [
+      {
+        "platform": "Email",
+        "url": "mailto:kamala.harris@lawfirm.com",
+        "icon": "/svgIcon/emailicon.svg"
+      },
+      {
+        "platform": "Phone",
+        "url": "tel:+639171234567",
+        "icon": "/svgIcon/phoneicon.svg"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/in/kamalaharris",
+        "icon": "/svgIcon/linkedinicon.svg"
+      },
+      {
+        "platform": "WhatsApp",
+        "url": "https://wa.me/639171234567",
+        "icon": "/svgIcon/whatsappicon.svg"
+      }
+    ],
+    "bio": "Kamala Harris is a dedicated family law attorney with over a decade of experience guiding clients through sensitive and complex family matters. She is known for her compassionate approach while providing clear, practical legal advice tailored to each client’s situation.",
+    "education": [
+      "Juris Doctor (J.D.), University of California",
+      "B.A. in Sociology"
+    ],
+    "barAdmissions": [
+      "California Bar",
+      "Philippine Bar"
+    ],
+    "yearsOfExperience": 12,
+    "languages": [
+      "English"
+    ]
+  },
+  {
+    "id": "caleb-dawson",
+    "name": "Caleb Dawson",
+    "role": "Criminal Defense Lawyer",
+    "img": "/team/Atty2.jpg",
+    "practiceAreas": [
+      "Criminal Defense",
+      "White-Collar Crimes",
+      "Drug Offenses",
+      "Trial Litigation"
+    ],
+    "socialLinks": [
+      {
+        "platform": "Email",
+        "url": "mailto:caleb.dawson@lawfirm.com",
+        "icon": "/svgIcon/emailicon.svg"
+      },
+      {
+        "platform": "Phone",
+        "url": "tel:+639178765432",
+        "icon": "/svgIcon/phoneicon.svg"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/in/calebdawson",
+        "icon": "/svgIcon/linkedinicon.svg"
+      },
+      {
+        "platform": "WhatsApp",
+        "url": "https://wa.me/639178765432",
+        "icon": "/svgIcon/whatsappicon.svg"
+      }
+    ],
+    "bio": "Caleb Dawson is an experienced criminal defense attorney who has represented clients in a wide range of criminal cases. He is recognized for his strategic courtroom advocacy and commitment to protecting the constitutional rights of his clients.",
+    "education": [
+      "Juris Doctor (J.D.), University of Chicago Law School",
+      "B.A. in Criminal Justice"
+    ],
+    "barAdmissions": [
+      "Illinois Bar",
+      "Philippine Bar"
+    ],
+    "yearsOfExperience": 15,
+    "languages": [
+      "English"
+    ]
+  },
+  {
+    "id": "hannah-liu",
+    "name": "Hannah Liu",
+    "role": "Real Estate Lawyer",
+    "img": "/team/Atty3.jpg",
+    "practiceAreas": [
+      "Real Estate Law",
+      "Property Transactions",
+      "Land Use & Zoning",
+      "Lease Agreements"
+    ],
+    "socialLinks": [
+      {
+        "platform": "Email",
+        "url": "mailto:hannah.liu@lawfirm.com",
+        "icon": "/svgIcon/emailicon.svg"
+      },
+      {
+        "platform": "Phone",
+        "url": "tel:+639179876543",
+        "icon": "/svgIcon/phoneicon.svg"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/in/hannahliu",
+        "icon": "/svgIcon/linkedinicon.svg"
+      },
+      {
+        "platform": "WhatsApp",
+        "url": "https://wa.me/639179876543",
+        "icon": "/svgIcon/whatsappicon.svg"
+      }
+    ],
+    "bio": "Hannah Liu specializes in real estate law, advising individuals and businesses on property transactions and regulatory compliance. Her attention to detail and proactive legal guidance help clients avoid costly disputes.",
+    "education": [
+      "Juris Doctor (J.D.), Columbia Law School",
+      "B.S. in Business Administration"
+    ],
+    "barAdmissions": [
+      "New York State Bar",
+      "Philippine Bar"
+    ],
+    "yearsOfExperience": 10,
+    "languages": [
+      "English",
+      "Mandarin"
+    ]
+  },
+  {
+    "id": "arthur-whitman",
+    "name": "Arthur Whitman",
+    "role": "Senior Corporate Lawyer",
+    "img": "/team/Atty4.jpg",
+    "practiceAreas": [
+      "Corporate Law",
+      "Mergers & Acquisitions",
+      "Contract Drafting",
+      "Corporate Compliance"
+    ],
+    "socialLinks": [
+      {
+        "platform": "Email",
+        "url": "mailto:arthur.whitman@lawfirm.com",
+        "icon": "/svgIcon/emailicon.svg"
+      },
+      {
+        "platform": "Phone",
+        "url": "tel:+639176543210",
+        "icon": "/svgIcon/phoneicon.svg"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/in/arthurwhitman",
+        "icon": "/svgIcon/linkedinicon.svg"
+      },
+      {
+        "platform": "WhatsApp",
+        "url": "https://wa.me/639176543210",
+        "icon": "/svgIcon/whatsappicon.svg"
+      }
+    ],
+    "bio": "Arthur Whitman is a corporate attorney advising startups and established companies on governance, transactions, and regulatory matters. He focuses on delivering practical legal solutions that support long-term business growth.",
+    "education": [
+      "Juris Doctor (J.D.), New York University School of Law",
+      "B.A. in Economics"
+    ],
+    "barAdmissions": [
+      "New York State Bar",
+      "Philippine Bar"
+    ],
+    "yearsOfExperience": 28,
+    "languages": [
+      "English"
+    ]
+  },
+    {
+    "id": "ananya-sharma",
+    "name": "Ananya Sharma",
+    "role": "Intellectual Property Lawyer",
+    "img": "/team/Atty5.jpg",
+    "practiceAreas": [
+      "Intellectual Property Law",
+      "Trademark Registration",
+      "Copyright Law",
+      "Patent Protection"
+    ],
+    "socialLinks": [
+      {
+        "platform": "Email",
+        "url": "mailto:ananya.sharma@lawfirm.com",
+        "icon": "/svgIcon/emailicon.svg"
+      },
+      {
+        "platform": "Phone",
+        "url": "tel:+919876543210",
+        "icon": "/svgIcon/phoneicon.svg"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/in/ananyasharma",
+        "icon": "/svgIcon/linkedinicon.svg"
+      },
+      {
+        "platform": "WhatsApp",
+        "url": "https://wa.me/919876543210",
+        "icon": "/svgIcon/whatsappicon.svg"
+      }
+    ],
+    "bio": "Ananya Sharma is an intellectual property lawyer with a strong background in protecting creative works and commercial innovations. She advises startups, creators, and technology companies on trademark, copyright, and patent matters, with a focus on strategic brand protection.",
+    "education": [
+      "Bachelor of Laws (LL.B.), National Law School of India University",
+      "B.Sc. in Computer Science"
+    ],
+    "barAdmissions": [
+      "Bar Council of India",
+      "Philippine Bar"
+      
+    ],
+    "yearsOfExperience": 9,
+    "languages": [
+      "English",
+      "Hindi"
+    ]
+  },
+  {
+    "id": "miguel-santos",
+    "name": "Miguel Santos",
+    "role": "Intellectual Property Lawyer",
+    "img": "/team/atty6.jpg",
+    "practiceAreas": [
+      "Intellectual Property Law",
+      "Patent Law",
+      "Technology Licensing",
+      "Trademark Enforcement"
+    ],
+    "socialLinks": [
+      {
+        "platform": "Email",
+        "url": "mailto:miguel.santos@lawfirm.com",
+        "icon": "/svgIcon/emailicon.svg"
+      },
+      {
+        "platform": "Phone",
+        "url": "tel:+61412345678",
+        "icon": "/svgIcon/phoneicon.svg"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/in/miguelsantos",
+        "icon": "/svgIcon/linkedinicon.svg"
+      },
+      {
+        "platform": "WhatsApp",
+        "url": "https://wa.me/61412345678",
+        "icon": "/svgIcon/whatsappicon.svg"
+      }
+    ],
+    "bio": "Miguel Santos is a Filipino intellectual property lawyer who earned his law degree overseas and specializes in protecting technological innovations and creative assets. He advises multinational clients on patent strategy, licensing, and cross-border intellectual property matters.",
+    "education": [
+      "Juris Doctor (J.D.), University of Melbourne",
+      "B.S. in Electronics Engineering"
+    ],
+    "barAdmissions": [
+      "Supreme Court of Victoria (Australia)",
+      "Philippine Bar"
+    ],
+    "yearsOfExperience": 11,
+    "languages": [
+      "English",
+      "Filipino"
+    ]
+  },
+  {
+    "id": "roberto-delacruz",
+    "name": "Roberto Dela Cruz",
+    "role": "Senior Criminal Defense Lawyer",
+    "img": "/team/Atty7.jpg",
+    "practiceAreas": [
+      "Criminal Defense",
+      "Trial Litigation",
+      "Appellate Advocacy",
+      "White-Collar Crimes"
+    ],
+    "socialLinks": [
+      {
+        "platform": "Email",
+        "url": "mailto:roberto.delacruz@lawfirm.com",
+        "icon": "/svgIcon/emailicon.svg"
+      },
+      {
+        "platform": "Phone",
+        "url": "tel:+639189999999",
+        "icon": "/svgIcon/phoneicon.svg"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/in/robertodelacruz",
+        "icon": "/svgIcon/linkedinicon.svg"
+      },
+      {
+        "platform": "WhatsApp",
+        "url": "https://wa.me/639189999999",
+        "icon": "/svgIcon/whatsappicon.svg"
+      }
+    ],
+    "bio": "Roberto Dela Cruz is a veteran criminal defense lawyer with decades of courtroom experience in the Philippines. Known for his sharp trial skills and deep knowledge of criminal procedure, he has successfully defended clients in high-profile and complex criminal cases.",
+    "education": [
+      "Bachelor of Laws (LL.B.), University of the Philippines",
+      "B.A. in Political Science"
+    ],
+    "barAdmissions": [
+      "Philippine Bar"
+    ],
+    "yearsOfExperience": 32,
+    "languages": [
+      "English",
+      "Filipino"
+    ]
+  }
+]

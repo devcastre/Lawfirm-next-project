@@ -1,0 +1,13 @@
+.practice-area{
+    gap: 0.75rem;
+    margin: 0.75rem;
+}
+
+.practices{
+    border: 2px solid #ffffff;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+}
