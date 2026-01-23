@@ -7,6 +7,7 @@ import Script from 'next/script';
 
 import { Navbar } from './Components/Navbar';
 import { Footer } from './Components/Footer';
+import { useEffect } from 'react';
 
 const robotoSerif = Roboto_Serif({
   subsets: ["latin"],
@@ -28,6 +29,11 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap.js"); // only runs in the browser
+  }, []);
+
   return (
     <html lang="en">
       
@@ -39,10 +45,7 @@ export default function RootLayout({ children }) {
 
 
 
-        <Script
-          src="/bootstrap.bundle.min.js"
-          strategy="afterInteractive"
-        />
+
       </body>
     
     </html>
