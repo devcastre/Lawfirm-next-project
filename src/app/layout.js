@@ -1,6 +1,4 @@
 
-"use client"
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 
@@ -32,9 +30,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-  useEffect(() => {
-    import("bootstrap/dist/js/bootstrap.js"); // only runs in the browser
-  }, []);
+  // useEffect(() => {
+  //   import("bootstrap/dist/js/bootstrap.js");
+  // }, []);
 
   return (
     <html lang="en">
@@ -47,7 +45,10 @@ export default function RootLayout({ children }) {
 
 
 
-
+        <Script
+          src="/bootstrap.bundle.min.js"
+          strategy="afterInteractive"
+        />
       </body>
     
     </html>
