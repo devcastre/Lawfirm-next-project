@@ -4,10 +4,8 @@ import "./globals.css";
 
 import { Roboto_Serif, Poppins } from "next/font/google";
 import Script from 'next/script';
+import ClientLayout from './ClientLayout';
 
-import { Navbar } from './Components/Navbar';
-import { Footer } from './Components/Footer';
-import { useEffect } from 'react';
 
 const robotoSerif = Roboto_Serif({
   subsets: ["latin"],
@@ -30,18 +28,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-  // useEffect(() => {
-  //   import("bootstrap/dist/js/bootstrap.js");
-  // }, []);
 
   return (
     <html lang="en">
       
       <body className={`${robotoSerif.variable} ${poppins.variable} d-flex flex-column align-items-center`}>
 
-        <Navbar/>
-        {children}
-        <Footer/>
+        <ClientLayout>{children}</ClientLayout>
 
 
 
