@@ -2,7 +2,7 @@
 
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 // import "../../styles/lawyerProfilePage.css";
 
 export default async function LawyerProfilePage({ params }) {
