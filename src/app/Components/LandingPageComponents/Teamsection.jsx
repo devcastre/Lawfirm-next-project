@@ -8,7 +8,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export async function Teamsection() {
-  const res = await fetch('/data/team.json')
+  const res = await fetch('${process.env.NEXT_PUBLIC_BASE_URL}/data/team.json')
   const lawyers = await res.json()
 
   const topLawyers = lawyers.reduce((acc, lawyer) => {
