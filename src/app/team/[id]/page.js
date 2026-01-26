@@ -1,13 +1,21 @@
+'use client'
+
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import { useEffect } from 'react';
 // import "../../styles/lawyerProfilePage.css";
 
 export default async function LawyerProfilePage({ params }) {
   const { id } = await params;
 
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/data/team.json`);
-  const lawyers = await res.json();
+  const [lawyers, setLawyers] = useState([]);
+
+  useEffect(() => {
+    fetch('/data/team.json')
+      .then(res => res.json())
+      .then(setLawyers);
+  }, []);
 
 
   const lawyer = lawyers.find(lawyer => lawyer.id === id);

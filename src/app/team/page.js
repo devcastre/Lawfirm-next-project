@@ -1,11 +1,20 @@
+'use client'
+
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect } from 'react';
 
 // import '../styles/card.css'
 
 export default async function TeamPage() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/data/team.json`);
-  const lawyers = await res.json()
+  const [lawyers, setLawyers] = useState([]);
+
+  useEffect(() => {
+    fetch('/data/team.json')
+      .then(res => res.json())
+      .then(setLawyers);
+  }, []);
 
   return (
     <main className='d-flex flex-column align-items-center m-2 m-md-4'>

@@ -1,6 +1,6 @@
+'use client'
 
-
-import React from 'react'
+import React, { useEffect } from 'react'
 
 
 import { navLinks } from '@/app/config/links';
@@ -8,8 +8,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export async function Teamsection() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/data/team.json`);
-  const lawyers = await res.json()
+  const [lawyers, setLawyers] = useState([]);
+
+  useEffect(() => {
+    fetch('/data/team.json')
+      .then(res => res.json())
+      .then(setLawyers);
+  }, []);
 
   const topLawyers = lawyers.reduce((acc, lawyer) => {
     acc.push(lawyer)
