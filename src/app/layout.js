@@ -38,9 +38,9 @@ export default function RootLayout({ children }) {
 
         <BootstrapJSClient/>
 
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
 
 
         {/* <Script
