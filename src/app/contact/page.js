@@ -3,7 +3,7 @@
 import React from 'react'
 
 import Image from 'next/image'
-import '../styles/contactUs.css'
+// import '../styles/contactUs.css'
 
 
 export default function ContactUsPage() {

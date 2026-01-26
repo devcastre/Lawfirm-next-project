@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { navLinks } from '../config/links';
 
-import '../styles/navBar.css';
+// import '../styles/navBar.css';
 // import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 

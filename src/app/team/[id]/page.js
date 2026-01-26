@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import "../../styles/lawyerProfilePage.css";
+// import "../../styles/lawyerProfilePage.css";
 
 export default async function LawyerProfilePage({ params }) {
   const { id } = await params;

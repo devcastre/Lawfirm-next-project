@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../styles/accordion.css'
+// import '../styles/accordion.css'
 
 export const Accordion = () => {
   return (

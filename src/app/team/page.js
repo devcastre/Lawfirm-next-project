@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import '../styles/card.css'
+// import '../styles/card.css'
 
 export default async function TeamPage() {
   const res = await fetch('/data/team.json')
