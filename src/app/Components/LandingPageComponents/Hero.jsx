@@ -14,7 +14,7 @@ export const Hero = () => {
   return (
     <div className="hero-section d-flex w-100 justify-content-center align-items-end rounded-1 px-md-5">
 
-        <div class="hero-content text-white mx-1 mb-3 m-sm-3 d-flex flex-fill">
+        <div className="hero-content text-white mx-1 mb-3 m-sm-3 d-flex flex-fill">
           <div className="row d-flex flex-fill">
 
             <div className='col-12 col-md-6 d-flex flex-column text-center text-md-start px-4 py-2'>

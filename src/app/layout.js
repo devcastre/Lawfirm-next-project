@@ -3,9 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 
 import { Roboto_Serif, Poppins } from "next/font/google";
-import Script from 'next/script';
+// import Script from 'next/script';
 import { Navbar } from './Components/Navbar';
 import { Footer } from './Components/Footer';
+import BootstrapJSClient from './BootstrapJSClient';
 
 
 const robotoSerif = Roboto_Serif({
@@ -35,15 +36,17 @@ export default function RootLayout({ children }) {
       
       <body className={`${robotoSerif.variable} ${poppins.variable} d-flex flex-column align-items-center`}>
 
+        <BootstrapJSClient/>
+
         <Navbar />
         {children}
         <Footer />
 
 
-        <Script
+        {/* <Script
           src="/bootstrap.bundle.min.js"
           strategy="afterInteractive"
-        />
+        /> */}
       </body>
     
     </html>

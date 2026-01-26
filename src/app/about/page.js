@@ -7,9 +7,9 @@ import '../styles/aboutus.css'
 export default function AboutPage() {
   return (
     <main className='d-flex flex-column w-100 align-items-center m-2 m-md-4 gap-5'>
-        <div className="about-section d-flex flex-fill justify-content-center rounded-3 m-2 m-md-4 px-md-5">
+        <div className="about-section d-flex justify-content-center rounded-3 m-2 m-md-4 px-md-5">
 
-            <div class="about-content d-flex flex-column flex-lg-row align-items-center gap-5 justify-content-between text-white  d-flex flex-fill p-5">
+            <div className="about-content d-flex flex-column flex-lg-row align-items-center gap-5 justify-content-between text-white p-5">
                 <div className='text-center text-lg-start about-item'>
                     <p><span className='fs-1 fw-1 font-fam'>About Us</span> Established in 2020, LawfulFill Law Firm has grown from a small practice to a multi-disciplinary team serving clients in corporate law, family law, criminal defense, real estate, and intellectual property. Over the years, we’ve helped resolve hundreds of cases through a blend of legal expertise, collaboration, and a deep understanding of our clients’ needs.</p>
                 </div>
