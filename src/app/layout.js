@@ -4,7 +4,8 @@ import "./globals.css";
 
 import { Roboto_Serif, Poppins } from "next/font/google";
 import Script from 'next/script';
-import ClientLayout from './ClientLayout';
+import { Navbar } from './Components/Navbar';
+import { Footer } from './Components/Footer';
 
 
 const robotoSerif = Roboto_Serif({
@@ -34,8 +35,9 @@ export default function RootLayout({ children }) {
       
       <body className={`${robotoSerif.variable} ${poppins.variable} d-flex flex-column align-items-center`}>
 
-        <ClientLayout>{children}</ClientLayout>
-
+        <Navbar />
+        {children}
+        <Footer />
 
 
         <Script
