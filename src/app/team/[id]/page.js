@@ -6,7 +6,7 @@ export default async function LawyerProfilePage({ params }) {
   const { id } = await params;
 
 
-  const res = await fetch('${process.env.NEXT_PUBLIC_BASE_URL}/data/team.json');
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/data/team.json`);
   const lawyers = await res.json();
 
 
