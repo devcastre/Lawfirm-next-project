@@ -5,8 +5,8 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 // import "../../styles/lawyerProfilePage.css";
 
-export default async function LawyerProfilePage({ params }) {
-  const { id } = await params;
+export default function LawyerProfilePage({ params }) {
+  const { id } = params;
 
 
   const [lawyers, setLawyers] = useState([]);

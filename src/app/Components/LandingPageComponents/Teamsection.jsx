@@ -7,7 +7,7 @@ import { navLinks } from '@/app/config/links';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export async function Teamsection() {
+export function Teamsection() {
   const [lawyers, setLawyers] = useState([]);
 
   useEffect(() => {

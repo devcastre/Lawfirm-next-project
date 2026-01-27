@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 
 // import '../styles/card.css'
 
-export default async function TeamPage() {
+export default function TeamPage() {
   const [lawyers, setLawyers] = useState([]);
 
   useEffect(() => {
