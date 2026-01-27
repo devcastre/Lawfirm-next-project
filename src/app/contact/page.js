@@ -43,7 +43,7 @@ export default function ContactUsPage() {
                 </div>                
             </div>
         </div>
-        <form className={`${styles.contact-form}d-flex flex-column p-4 m-2 rounded-3 gap-3 `}>
+        <form className={`${styles.contactForm} d-flex flex-column p-4 m-2 rounded-3 gap-3 `}>
         
             
             <div className='d-flex flex-column'>
@@ -53,7 +53,7 @@ export default function ContactUsPage() {
                 <input
                 type="text"
                 placeholder="Firstname - Middlename - Lastname"
-                className={`${styles.contact-input} rounded-1 px-3 py-2`}
+                className={`${styles.contactInput} rounded-1 px-3 py-2`}
                 />
             </div>
 
@@ -65,7 +65,7 @@ export default function ContactUsPage() {
                 <input
                 type="email"
                 placeholder="youremail@email.com"
-                className={`${styles.contact-input} rounded-1 px-3 py-2`}
+                className={`${styles.contactInput} rounded-1 px-3 py-2`}
                 />
             </div>
 
@@ -77,7 +77,7 @@ export default function ContactUsPage() {
                 <input
                 type="tel"
                 placeholder="0000-000-0000"
-                className={`${styles.contact-input} rounded-1 px-3 py-2`}
+                className={`${styles.contactInput} rounded-1 px-3 py-2`}
                 />
             </div>
 
@@ -89,14 +89,14 @@ export default function ContactUsPage() {
                 <textarea
                 placeholder="Type anything here"
                 rows={5}
-                className={`${styles.contact-textarea} rounded-1 px-3 py-2`}
+                className={`${styles.contactTextarea} rounded-1 px-3 py-2`}
                 />
             </div>
 
             
             <button
                 type="submit"
-                className={`${styles.contact-submit} rounded-1 px-4 py-3 text-white`}
+                className={`${styles.contactSubmit} rounded-1 px-4 py-3 text-white`}
             >
                 Send Message
             </button>

@@ -6,13 +6,13 @@
   
 }
 
-.contact-form{
+.contactForm{
     background: var(--primaryColor);
     width: 100%;
     max-width: 500px;
 }
 
-.contact-input, .contact-textarea, .contact-submit{
+.contactInput, .contactTextarea, .contactSubmit{
     background: var(--background);
     border: none;
 }
