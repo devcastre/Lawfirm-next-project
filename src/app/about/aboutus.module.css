@@ -1,6 +1,6 @@
 
 
-.about-section {
+.aboutSection {
   position: relative;
   min-height: 585px;
   height: fit-content;
@@ -15,7 +15,7 @@
   align-items: center;
 }
 
-.about-section::before {
+.aboutSection::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -24,12 +24,12 @@
   z-index: 1;
 }
 
-.about-content {
+.aboutContent {
   width: 100%;
   position: relative;
   z-index: 2;
 }
 
-.about-item, .about-goal{
+.aboutItem, .aboutGoal{
   max-width: 400px;
 }
