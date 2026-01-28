@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-import styles from '../../styles/hero.module.css'
+import styles from './hero.module.css'
 // import '../../styles/hero.css';
 import { navLinks } from '@/app/config/links';
 import Link from 'next/link';
