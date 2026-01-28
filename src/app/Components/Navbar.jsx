@@ -9,6 +9,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { navLinks } from '../config/links';
 
+import styles from '../styles/navBar.module.css'
 // import '../styles/navBar.css';
 // import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
@@ -43,7 +44,7 @@ export const Navbar = () => {
                 <li key={link.href} className="nav-item ">
                   <Link
                     href={link.href}
-                    className={`nav-link nav-anim text-white ${isActive ? "active-link" : ""}`}
+                    className={`nav-link ${styles.navAnim} text-white ${isActive ? `${styles.activeLink}` : ""}`}
                   >
                     {link.name}
                   </Link>

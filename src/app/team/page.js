@@ -5,6 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react';
 
+
+import styles from "./card.module.css"
 // import '../styles/card.css'
 
 export default function TeamPage() {
@@ -25,13 +27,13 @@ export default function TeamPage() {
           {lawyers.map((lawyer) => (
             <div key={lawyer.id} className="col-12 col-sm-6 col-md-4 col-lg-3">
               <Link href={`/team/${lawyer.id}`} className="text-decoration-none">
-                <div className="card w-100 border-0 position-relative overflow-hidden card-container">
+                <div className={`card w-100 border-0 position-relative overflow-hidden ${styles.cardContainer}`}>
                   <Image
                     src={lawyer.img}
                     alt={lawyer.name}
                     width={400}
                     height={450}
-                    className="card-img-top card-img"
+                    className={`card-img-top ${styles.cardImg}`}
                   />
                   <div className="card-body position-absolute bottom-0 w-100 text-white">
                     <h5>{lawyer.name}</h5>

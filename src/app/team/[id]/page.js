@@ -3,6 +3,8 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+
+import styles from "./lawyerProfilePage.module.css"
 // import "../../styles/lawyerProfilePage.css";
 
 export default function LawyerProfilePage({ params }) {
@@ -64,9 +66,9 @@ export default function LawyerProfilePage({ params }) {
           </div>
           <div className='d-flex flex-column gap-1 px-2 mt-5 align-items-center align-items-lg-start'>
             <h5 className='font-fam'>Practice Area:</h5>
-            <div className='row text-white justify-content-center justify-content-lg-start practice-area'>
+            <div className={`row text-white justify-content-center justify-content-lg-start ${styles.practiceArea}`}>
               {lawyer.practiceAreas.map((practices, index) => (
-                <div key={index} className='col-6 practices'>
+                <div key={index} className={`col-6 ${styles.practices}`}>
                   {practices}
                 </div>
               ))}

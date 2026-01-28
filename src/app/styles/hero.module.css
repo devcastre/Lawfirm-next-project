@@ -1,6 +1,6 @@
 
 
-.hero-section {
+.heroSection {
   position: relative;
   max-width: 1280px;
   height: 585px;
@@ -13,7 +13,7 @@
   align-items: flex-end;
 }
 
-.hero-section::before {
+.heroSection::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -21,7 +21,7 @@
   z-index: 1;
 }
 
-.hero-content {
+.heroContent {
   position: relative;
   z-index: 2;
 }

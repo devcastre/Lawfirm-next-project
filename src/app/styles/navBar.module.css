@@ -1,13 +1,13 @@
 
 
-.nav-anim {
+.navAnim {
   position: relative;
   padding-bottom: 4px;
   transition: color 0.3s ease;
 }
 
 
-.nav-anim::after {
+.navAnim::after {
   content: "";
   position: absolute;
   width: 0%;
@@ -19,17 +19,17 @@
 }
 
 
-.nav-anim:hover::after {
+.navAnim:hover::after {
   width: 100%;
 }
 
 
-.active-link {
+.activeLink {
   color: white !important;
   font-weight: 600;
 }
 
 
-.active-link::after {
+.activeLink::after {
   width: 100%;
 }

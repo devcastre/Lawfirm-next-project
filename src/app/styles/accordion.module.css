@@ -11,38 +11,38 @@
 }
 
 
-.accordion-item {
+.accordionItem {
   border: none;
 }
 
 
-.accordion-button {
+.accordionButton {
   background: var(--primaryColor);
   color: #ffffff;
 }
 
-.accordion-button:not(.collapsed)::after, .accordion-button::after{
+.accordionButton:not(.collapsed)::after, .accordionButton::after{
   filter: brightness(0) invert(1);
 }
 
-.accordion-button:focus {
+.accordionButton:focus {
   box-shadow: none;
   border-color: transparent;
 }
 
-.accordion-button:not(.collapsed) {
+.accordionButton:not(.collapsed) {
   background: var(--teriaryColor);
   color: #ffffff;
 }
 
 
 
-.accordion-collapse {
+.accordionCollapse {
   background: var(--secondaryColor);
   color: #ffffff;
 }
 
-.accordion-body{
+.accordionBody{
   display: flex;
   flex-direction: column;
   gap: 1rem;

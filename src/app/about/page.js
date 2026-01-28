@@ -7,14 +7,14 @@ import styles from "./aboutus.module.css";
 
 export default function AboutPage() {
   return (
-    <main className={`${styles.aboutus}'d-flex flex-column w-100 align-items-center m-2 m-md-4 gap-5'`}>
-        <div className={`${styles.aboutSection} d-flex justify-content-center rounded-3 m-2 m-md-4 px-md-5`}>
+    <main className={`d-flex flex-column w-100 align-items-center m-2 m-md-4 gap-5`}>
+        <div className={`d-flex justify-content-center rounded-3 m-2 m-md-4 px-md-5 ${styles.aboutSection}`}>
 
-            <div className={`${styles.aboutContent} d-flex flex-column flex-lg-row align-items-center gap-5 justify-content-between text-white p-5`}>
-                <div className={`${styles.aboutItem}text-center text-lg-start `}>
+            <div className={`d-flex flex-column flex-lg-row align-items-center gap-5 justify-content-between text-white p-5 ${styles.aboutContent}`}>
+                <div className={`text-center text-lg-start ${styles.aboutItem}`}>
                     <p><span className='fs-1 fw-1 font-fam'>About Us</span> Established in 2020, LawfulFill Law Firm has grown from a small practice to a multi-disciplinary team serving clients in corporate law, family law, criminal defense, real estate, and intellectual property. Over the years, we’ve helped resolve hundreds of cases through a blend of legal expertise, collaboration, and a deep understanding of our clients’ needs.</p>
                 </div>
-                <div className={`${styles.aboutGoall}text-center text-lg-end  d-flex flex-column gap-5`}>
+                <div className={`text-center text-lg-end  d-flex flex-column gap-5 ${styles.aboutGoal}`}>
                     <p><span className='fs-1 fw-1 font-fam'>Our Mission</span> is to provide accessible, high-quality legal services that protect rights, resolve disputes, and support clients in making informed decision grounded in integrity, professionalism, and accountability.</p>
 
                     <p><span className='fs-1 fw-1 font-fam'>Our Vision</span> is to become a trusted law firm known for excellence, innovation, and client-centered advocacy within our community and beyond.</p>

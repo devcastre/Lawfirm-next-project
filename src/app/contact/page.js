@@ -3,7 +3,7 @@
 import React from 'react'
 
 import Image from 'next/image'
-import styles from '../styles/contactUs.module.css'
+import styles from './contactUs.module.css'
 
 
 // import '../styles/contactUs.css'
@@ -13,7 +13,7 @@ export default function ContactUsPage() {
     console.log(styles)
 
   return (
-    <main className={`${styles.contactUs} container d-flex flex-column flex-lg-row text-white my-5 gap-4 justify-content-center align-items-center`}>
+    <main className={`container d-flex flex-column flex-lg-row text-white my-5 gap-4 justify-content-center align-items-center`}>
         <div className='d-flex flex-column p-4 m-2'>
             <h2 className='font-fam'>Start Your Consultation</h2>
             <p>Speak with our legal team today for guidance, support, and clarity on your case.</p>
@@ -47,7 +47,7 @@ export default function ContactUsPage() {
                 </div>                
             </div>
         </div>
-        <form className={`${styles.contactForm} d-flex flex-column p-4 m-2 rounded-3 gap-3 `}>
+        <form className={`d-flex flex-column p-4 m-2 rounded-3 gap-3 ${styles.contactForm}`}>
         
             
             <div className='d-flex flex-column'>
@@ -57,7 +57,7 @@ export default function ContactUsPage() {
                 <input
                 type="text"
                 placeholder="Firstname - Middlename - Lastname"
-                className={`${styles.contactInput} rounded-1 px-3 py-2`}
+                className={`rounded-1 px-3 py-2 ${styles.contactInput}`}
                 />
             </div>
 
@@ -69,7 +69,7 @@ export default function ContactUsPage() {
                 <input
                 type="email"
                 placeholder="youremail@email.com"
-                className={`${styles.contactInput} rounded-1 px-3 py-2`}
+                className={`rounded-1 px-3 py-2 ${styles.contactInput}`}
                 />
             </div>
 
@@ -81,7 +81,7 @@ export default function ContactUsPage() {
                 <input
                 type="tel"
                 placeholder="0000-000-0000"
-                className={`${styles.contactInput} rounded-1 px-3 py-2`}
+                className={`rounded-1 px-3 py-2 ${styles.contactInput}`}
                 />
             </div>
 
@@ -93,14 +93,14 @@ export default function ContactUsPage() {
                 <textarea
                 placeholder="Type anything here"
                 rows={5}
-                className={`${styles.contactTextarea} rounded-1 px-3 py-2`}
+                className={`rounded-1 px-3 py-2 ${styles.contactTextarea}`}
                 />
             </div>
 
             
             <button
                 type="submit"
-                className={`${styles.contactSubmit} rounded-1 px-4 py-3 text-white`}
+                className={`rounded-1 px-4 py-3 text-white ${styles.contactSubmit}`}
             >
                 Send Message
             </button>
