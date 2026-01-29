@@ -48,7 +48,7 @@
   gap: 1rem;
 }
 
-ul{
+.servicesOffer{
   display: flex;
   flex-direction: column;
   gap: 0.5rem;

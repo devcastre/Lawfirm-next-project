@@ -23,7 +23,7 @@ export const Accordion = () => {
                     </p>
 
                     <h6>What we handle:</h6>
-                    <ul>
+                    <ul className={styles.servicesOffer}>
                         <li>Business registration and corporate structuring</li>
                         <li>Contract drafting & review</li>
                         <li>Regulatory compliance</li>
@@ -46,7 +46,7 @@ export const Accordion = () => {
                     </p>
 
                     <h6>What we handle:</h6>
-                    <ul>
+                    <ul className={styles.servicesOffer}>
                         <li>Marriage, annulment, and legal separation</li>
                         <li>Child custody & visitation arrangements</li>
                         <li>Child and spousal support</li>
@@ -69,7 +69,7 @@ export const Accordion = () => {
                     </p>
 
                     <h6>What we handle:</h6>
-                    <ul>
+                    <ul className={styles.servicesOffer}>
                         <li>Defense for minor to major criminal charges</li>
                         <li>Bail applications</li>
                         <li>Arrest & investigation representation</li>
@@ -92,7 +92,7 @@ export const Accordion = () => {
                     </p>
 
                     <h6>What we handle:</h6>
-                    <ul>
+                    <ul className={styles.servicesOffer}>
                         <li>Deed and title transfers</li>
                         <li>Drafting & reviewing sale/lease contracts</li>
                         <li>Due diligence and document verification</li>
@@ -115,7 +115,7 @@ export const Accordion = () => {
                     </p>
 
                     <h6>What we handle:</h6>
-                    <ul>
+                    <ul className={styles.servicesOffer}>
                         <li>Trademark, copyright, and patent registration</li>
                         <li>IP verification & documentation</li>
                         <li>Licensing agreements</li>
