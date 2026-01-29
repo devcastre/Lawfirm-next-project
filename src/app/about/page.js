@@ -7,7 +7,7 @@ import styles from "./aboutus.module.css";
 
 export default function AboutPage() {
   return (
-    <main className={`d-flex flex-column w-100 align-items-center m-2 m-md-4 gap-5`}>
+    <main className='d-flex flex-column w-100 align-items-center m-2 m-md-4 gap-5'>
         <div className={`d-flex justify-content-center rounded-3 m-2 m-md-4 px-md-5 ${styles.aboutSection}`}>
 
             <div className={`d-flex flex-column flex-lg-row align-items-center gap-5 justify-content-between text-white p-5 ${styles.aboutContent}`}>
