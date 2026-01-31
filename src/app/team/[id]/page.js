@@ -1,15 +1,15 @@
 'use client'
 
-import { notFound } from 'next/navigation';
+import { notFound, useParams } from 'next/navigation';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 import styles from "./lawyerProfilePage.module.css"
 // import "../../styles/lawyerProfilePage.css";
 
-export default function LawyerProfilePage({ params }) {
-  const { id } = params;
-
+export default function LawyerProfilePage() {
+  const params = useParams();
+  const id = params.id;
 
   const [lawyers, setLawyers] = useState([]);
 
