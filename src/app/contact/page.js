@@ -6,7 +6,7 @@ import Image from 'next/image'
 import styles from './contactUs.module.css'
 
 
-// import '../styles/contactUs.css'
+
 
 
 export default function ContactUsPage() {

@@ -2,7 +2,7 @@ import React from 'react'
 
 
 import styles from "../styles/accordion.module.css"
-// import '../styles/accordion.css'
+
 
 export const Accordion = () => {
   return (

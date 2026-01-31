@@ -3,7 +3,7 @@
 import React from 'react'
 
 import styles from "./aboutus.module.css";
-// import '../styles/aboutus.css'
+
 
 export default function AboutPage() {
   return (

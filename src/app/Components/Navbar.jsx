@@ -10,8 +10,7 @@ import { usePathname } from 'next/navigation';
 import { navLinks } from '../config/links';
 
 import styles from '../styles/navBar.module.css'
-// import '../styles/navBar.css';
-// import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 
 
 export const Navbar = () => {

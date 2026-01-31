@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 import styles from "./lawyerProfilePage.module.css"
-// import "../../styles/lawyerProfilePage.css";
+
 
 export default function LawyerProfilePage() {
   const params = useParams();
