@@ -16,11 +16,16 @@ export default function LawyerProfilePage({ params }) {
   useEffect(() => {
     fetch('/data/team.json')
       .then(res => res.json())
-      .then(setLawyers);
+      .then(data => {
+        console.log('Fetched lawyers:', data);
+        setLawyers(data);
+      })
+      .catch(err => console.error('Fetch error:', err));
   }, []);
 
+  if (lawyers.length === 0) return <div>Loading...</div>;
 
-  const lawyer = lawyers.find(lawyer => lawyer.id === id);
+  const lawyer = lawyers.find(lawyer => String(lawyer.id) === String(id));
 
   if (!lawyer) notFound();
 
