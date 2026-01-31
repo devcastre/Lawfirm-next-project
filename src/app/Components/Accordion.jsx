@@ -10,14 +10,14 @@ import styles from "../styles/accordion.module.css"
 export const Accordion = () => {
   return (
     <div className="accordion accordion-flush" id="accordionFlushExample">
-        <div className={styles.accordionItem}>
+        <div className={`accordion-item ${styles.accordionItem}`}>
             <h2 className="accordion-header">
-                <button className={`collapsed ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <button className={`collapsed accordion-button ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     Corporate & Business Law
                 </button>
             </h2>
-            <div id="flush-collapseOne" className={`collapse ${styles.accordionCollapse}`} data-bs-parent="#accordionFlushExample">
-                <div className={styles.accordionBody}>
+            <div id="flush-collapseOne" className={`collapse accordion-collapse ${styles.accordionCollapse}`} data-bs-parent="#accordionFlushExample">
+                <div className={`accordion-body ${styles.accordionBody}`}>
                     <p>
                     We assist startups, SMEs, and established companies in navigating legal
                     requirements for smooth and compliant business operations. Our services cover
@@ -36,14 +36,14 @@ export const Accordion = () => {
                 </div>
             </div>
         </div>
-        <div className={styles.accordionItem}>
+        <div className={`accordion-item ${styles.accordionItem}`}>
             <h2 className="accordion-header">
-                <button className={`collapsed ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <button className={`collapsed accordion-button ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                     Family Law
                 </button>
             </h2>
-            <div id="flush-collapseTwo" className={`collapse ${styles.accordionCollapse}`} data-bs-parent="#accordionFlushExample">
-                <div className={styles.accordionBody}>
+            <div id="flush-collapseTwo" className={`collapse accordion-collapse ${styles.accordionCollapse}`} data-bs-parent="#accordionFlushExample">
+                <div className={`accordion-body ${styles.accordionBody}`}>
                     <p>
                     We guide individuals and families through sensitive legal matters with compassion, confidentiality, and strong representation. Our goal is to protect your rights while helping you reach fair and peaceful resolutions.
                     </p>
@@ -59,14 +59,14 @@ export const Accordion = () => {
                 </div>
             </div>
         </div>
-        <div className={styles.accordionItem}>
+        <div className={`accordion-item ${styles.accordionItem}`}>
             <h2 className="accordion-header">
-                <button className={`collapsed ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <button className={`collapsed accordion-button ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                     Criminal Defense
                 </button>
             </h2>
-            <div id="flush-collapseThree" className={`collapse ${styles.accordionCollapse}`} data-bs-parent="#accordionFlushExample">
-                <div className={styles.accordionBody}>
+            <div id="flush-collapseThree" className={`collapse accordion-collapse ${styles.accordionCollapse}`} data-bs-parent="#accordionFlushExample">
+                <div className={`accordion-body ${styles.accordionBody}`}>
                     <p>
                     We provide strategic defense for clients facing criminal accusations, ensuring your rights are protected from investigation to trial. Our team builds solid legal strategies to achieve reduced penalties, case dismissal, or acquittal when possible.
                     </p>
@@ -82,14 +82,14 @@ export const Accordion = () => {
                 </div>
             </div>
         </div>
-        <div className={styles.accordionItem}>
+        <div className={`accordion-item ${styles.accordionItem}`}>
             <h2 className="accordion-header">
-                <button className={`collapsed ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                <button className={`collapsed accordion-button ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                     Real Estate Law
                 </button>
             </h2>
-            <div id="flush-collapseFour" className={`collapse ${styles.accordionCollapse}`} data-bs-parent="#accordionFlushExample">
-                <div className={styles.accordionBody}>
+            <div id="flush-collapseFour" className={`collapse accordion-collapse ${styles.accordionCollapse}`} data-bs-parent="#accordionFlushExample">
+                <div className={`accordion-body ${styles.accordionBody}`}>
                     <p>
                     Our firm assists with secure, legally compliant real estate transactions for individuals, investors, and businesses. We ensure your property rights are protected and every document is accurate before you sign.
                     </p>
@@ -105,14 +105,14 @@ export const Accordion = () => {
                 </div>
             </div>
         </div>
-        <div className={styles.accordionItem}>
+        <div className={`accordion-item ${styles.accordionItem}`}>
             <h2 className="accordion-header">
-                <button className={`collapsed ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                <button className={`collapsed accordion-button ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                     Intellectual Property Law
                 </button>
             </h2>
-            <div id="flush-collapseFive" className={`collapse ${styles.accordionCollapse}`} data-bs-parent="#accordionFlushExample">
-                <div className={styles.accordionBody}>
+            <div id="flush-collapseFive" className={`collapse accordion-collapse ${styles.accordionCollapse}`} data-bs-parent="#accordionFlushExample">
+                <div className={`accordion-body ${styles.accordionBody}`}>
                     <p>
                     We help creators, inventors, and businesses protect their brand, content, and innovations. From registration to enforcement, we make sure your intellectual property stays legally protected.
                     </p>
