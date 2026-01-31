@@ -89,7 +89,7 @@ export default function LawyerProfilePage() {
         <div className='text-center text-lg-start m-2 m-md-4'>
           <p>{lawyer.bio}</p>
         </div>
-        <div className='row m-2 text-center text-lg-start'>
+        <div className='row m-2 g-5 text-center text-lg-start'>
           <div className='col-12 col-md-6'>
             <h4 className='font-fam'>Education:</h4>
             <span>{lawyer.education}</span>

@@ -15,23 +15,23 @@
   border: none;
 }
 
-.accordionButton {
+button .accordionButton {
   border-radius: 0;
   width: 100%;
   background: var(--primaryColor);
   color: #ffffff;
 }
 
-.accordionButton:not(.collapsed)::after, .accordionButton::after{
+button .accordionButton:not(.collapsed)::after, button .accordionButton::after{
   filter: brightness(0) invert(1);
 }
 
-.accordionButton:focus {
+button .accordionButton:focus {
   box-shadow: none;
   border-color: transparent;
 }
 
-.accordionButton:not(.collapsed) {
+button .accordionButton:not(.collapsed) {
   background: var(--teriaryColor);
   color: #ffffff;
 }
