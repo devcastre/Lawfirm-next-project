@@ -4,7 +4,7 @@
 import React from 'react'
 
 
-import styles from "../styles/accordion.module.css"
+import styles from "./accordion.module.css"
 
 
 export const Accordion = () => {
