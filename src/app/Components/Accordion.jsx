@@ -12,7 +12,7 @@ export const Accordion = () => {
     <div className="accordion accordion-flush" id="accordionFlushExample">
         <div className={`accordion-item ${styles.accordionItem}`}>
             <h2 className="accordion-header">
-                <button className={`collapsed accordion-button ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <button className={`collapsed accordion-button text-white ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     Corporate & Business Law
                 </button>
             </h2>

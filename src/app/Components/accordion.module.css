@@ -15,19 +15,19 @@
   border: none;
 }
 
-:global(.accordion-button).accordionButton {
+:global(.accordionButton) {
   border-radius: unset;
-  background: var(--primaryColor) !important;
+
   width: 100%;
   color: #ffffff;
 }
 
-:global(.accordion-button).accordionButton:hover {
-  background: var(--teriaryColor);
+:global(.accordionButton):hover {
+  background: var(--teriaryColor) !important;
 }
 
-:global(.accordion-button:not(.collapsed)).accordionButton {
-  background: var(--teriaryColor);
+:global(.accordionButton:not(.collapsed)) {
+  background: var(--teriaryColor) !important;
   color: #ffffff;
 }
 
@@ -42,8 +42,8 @@
 }
  */
 
-:global(.accordion-collapse).accordionCollapse {
-  background: var(--secondaryColor);
+:global(.accordionCollapse) {
+  background: var(--secondaryColor) !important;;
   color: #ffffff;
 }
 
