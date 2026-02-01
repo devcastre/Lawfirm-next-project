@@ -17,6 +17,7 @@
 
 .accordionButton {
   border-radius: unset;
+  background: var(--primaryColor) !important;
   width: 100%;
   color: #ffffff;
 }
