@@ -15,17 +15,17 @@
   border: none;
 }
 
-.accordion-button {
+.accordionButton {
   border-radius: unset;
   width: 100%;
   color: #ffffff;
 }
 
-.accordion-button:hover {
+.accordionButton:hover {
   background: var(--teriaryColor) !important;
 }
 
-.accordion-button:not(.collapsed) {
+.accordionButton:not(.collapsed) {
   background: var(--teriaryColor) !important;
   color: #ffffff;
 }
