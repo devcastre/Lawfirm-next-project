@@ -2,7 +2,7 @@
 
   --primaryColor: #550C20;
   --secondaryColor: #2A050C;
-  --teriaryColor: #880f26;
+  --tertiaryColor: #880f26;
 
   --font-poppins: 'Poppins', sans-serif;
   --font-roboto-serif: 'Roboto Serif', serif;
@@ -22,26 +22,26 @@
 }
 
 .accordionButton:hover {
-  background: var(--teriaryColor) !important;
+  background: var(--tertiaryColor) !important;
 }
 
 .accordionButton:not(.collapsed) {
-  background: var(--teriaryColor) !important;
+  background: var(--tertiaryColor) !important;
   color: #ffffff;
 }
 
 
 /* .accordionButton:hover {
-  background: var(--teriaryColor) !important;
+  background: var(--tertiaryColor) !important;
 }
 
 .accordionButton:not(.collapsed) {
-  background: var(--teriaryColor) !important;
+  background: var(--tertiaryColor) !important;
   color: #ffffff;
 }
  */
 
-:global(.accordionCollapse) {
+.accordionCollapse {
   background: var(--secondaryColor) !important;;
   color: #ffffff;
 }
