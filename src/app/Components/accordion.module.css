@@ -22,9 +22,21 @@
   color: #ffffff;
 }
 
+.accordionButton:not(.collapsed)::after, .accordionButton::after{
+  filter: brightness(0) invert(1);
+}
+
+.accordionButton:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
 .accordionButton:hover {
   background: var(--tertiaryColor) !important;
 }
+
+
+
 
 :global(.accordion-button:not(.collapsed)).accordionButton {
   background: var(--tertiaryColor);
