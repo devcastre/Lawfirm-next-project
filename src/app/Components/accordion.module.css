@@ -26,8 +26,8 @@
   background: var(--tertiaryColor) !important;
 }
 
-.accordionButton:not(.collapsed) {
-  background: var(--tertiaryColor) !important;
+:global(.accordion-button:not(.collapsed)).accordionButton {
+  background: var(--tertiaryColor);
   color: #ffffff;
 }
 
