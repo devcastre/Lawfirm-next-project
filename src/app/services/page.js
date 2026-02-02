@@ -9,7 +9,7 @@ export default function ServicesPage() {
           <Accordion/>
         </div>
 
-        <div className='d-flex flex-column gap-5'>
+        <div className='d-flex flex-column gap-5 w-100'>
           <h1 className='font-fam'>Our Legal Process</h1>
           <ol className='px-3 px-md-5 p d-flex flex-column gap-2'>
             <li>
