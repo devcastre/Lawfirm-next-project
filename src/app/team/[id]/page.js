@@ -36,7 +36,7 @@ export default function LawyerProfilePage() {
   console.log("socials", socials)
 
   return (
-    <div className='d-flex flex-column align-items-center m-2 m-md-4'>
+    <div className='container d-flex flex-column align-items-center m-2 m-md-4'>
       <div className='container d-flex flex-column flex-lg-row align-items-center justify-content-center justify-content-lg-start gap-5 my-5 mx-1 mx-sm-3 px-lg-5 text-white'>
         <Image
           src={lawyer.img}

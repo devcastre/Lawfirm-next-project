@@ -3,7 +3,7 @@ import { Accordion } from '../Components/Accordion'
 
 export default function ServicesPage() {
   return (
-    <main className='d-flex flex-column align-items-center m-2 m-md-4 px-4 px-md-5 gap-5 text-white'>
+    <main className='container d-flex flex-column align-items-center m-2 m-md-4 px-4 px-md-5 gap-5 text-white'>
         <div className='d-flex flex-column gap-5 my-5'>
           <h1 className='font-fam'>Our Services</h1>
           <Accordion/>

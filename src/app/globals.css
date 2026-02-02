@@ -30,11 +30,6 @@ body{
   background: var(--background);
 }
 
-main{
-  width: 100%;
-  max-width: 1440px;
-}
-
 a {
   text-decoration: none;
 }

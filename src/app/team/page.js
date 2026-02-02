@@ -19,7 +19,7 @@ export default function TeamPage() {
   }, []);
 
   return (
-    <main className='d-flex flex-column align-items-center m-2 m-md-4'>
+    <main className='container d-flex flex-column align-items-center m-2 m-md-4'>
       <div className='container d-flex flex-column text-white my-5 mx-1 mx-sm-3 px-lg-5 gap-5'>
         <h1 className='font-fam'>Our Team</h1>
 
