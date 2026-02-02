@@ -92,7 +92,7 @@ export default function LawyerProfilePage() {
         <div className='row m-2 g-5 text-center text-lg-start'>
           <div className='col-12 col-md-6'>
             <h4 className='font-fam'>Education:</h4>
-            <div className='d=flex flex-column'>
+            <div className='d-flex flex-column'>
               {lawyer.education.map((education, index) => (
                 <span key={index}>{education}</span>
               ))}
@@ -100,7 +100,7 @@ export default function LawyerProfilePage() {
           </div>
           <div className='col-12 col-md-6'>
             <h4 className='font-fam'>Bar Admissions:</h4>
-            <div className='d=flex flex-column'>
+            <div className='d-flex flex-column'>
               {lawyer.barAdmissions.map((bar, index) => (
                 <span key={index}>{bar}</span>
               ))}
