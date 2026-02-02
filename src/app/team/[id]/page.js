@@ -92,11 +92,19 @@ export default function LawyerProfilePage() {
         <div className='row m-2 g-5 text-center text-lg-start'>
           <div className='col-12 col-md-6'>
             <h4 className='font-fam'>Education:</h4>
-            <span>{lawyer.education}</span>
+            <div>
+              {lawyer.education.map((education) => {
+                {education}
+              })}
+            </div>
           </div>
           <div className='col-12 col-md-6'>
             <h4 className='font-fam'>Bar Admissions:</h4>
-            <span>{lawyer.barAdmissions}</span>
+            <div>
+              {lawyer.barAdmissions.map((bar) => {
+                {bar}
+              })}
+            </div>
           </div>
         </div>
       </div>
