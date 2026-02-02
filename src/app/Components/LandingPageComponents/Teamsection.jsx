@@ -43,7 +43,7 @@ export function Teamsection() {
                 <Image
                   src={lawyer.img}
                   alt={lawyer.name}
-                  width={400}
+                  width={375}
                   height={450}
                   className="card-img-top card-img"
                 />

@@ -31,7 +31,7 @@ export default function TeamPage() {
                   <Image
                     src={lawyer.img}
                     alt={lawyer.name}
-                    width={400}
+                    width={375}
                     height={450}
                     className={`card-img-top ${styles.cardImg}`}
                   />
