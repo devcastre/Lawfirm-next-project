@@ -13,7 +13,7 @@ export default function ContactUsPage() {
     console.log(styles)
 
   return (
-    <main className={`container d-flex flex-column flex-lg-row text-white my-5 gap-4 justify-content-center align-items-center`}>
+    <main className={`d-flex flex-column flex-lg-row text-white my-5 gap-4 justify-content-center align-items-center`}>
         <div className='d-flex flex-column p-4 m-2'>
             <h2 className='font-fam'>Start Your Consultation</h2>
             <p>Speak with our legal team today for guidance, support, and clarity on your case.</p>
