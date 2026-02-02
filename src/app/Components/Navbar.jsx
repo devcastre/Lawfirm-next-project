@@ -21,7 +21,7 @@ export const Navbar = () => {
 
     <nav className="container navbar navbar-expand-lg navbar-dark bg-transparent shadow-sm px-1 px-md-4">
       <div className="container-fluid">
-        <Link className="navbar-brand fw-bold text-white font-fam" href="/">
+        <Link className="navbar-brand fw-bold text-white font-fam mt-4" href="/">
           LawfulFill
         </Link>
 
