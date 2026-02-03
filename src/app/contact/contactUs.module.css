@@ -14,5 +14,6 @@
 
 .contactInput, .contactTextarea, .contactSubmit{
     background: var(--background);
+    color: white;
     border: none;
 }
