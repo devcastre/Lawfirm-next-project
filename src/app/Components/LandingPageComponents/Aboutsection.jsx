@@ -8,6 +8,7 @@ export const Aboutsection = () => {
 
   const moreLawyersLink = navLinks.find(link => link.name === 'About');
 
+
   return (
     <div className="container d-flex flex-fill rounded-1 text-white my-5 mx-1 mx-sm-3 px-lg-5">
 
@@ -21,21 +22,22 @@ export const Aboutsection = () => {
               </Link>
             </div>
 
+
             <div className='col-12 col-md-6 row px-sm-4 py-2 g-4'>
 
-              <div className='col-6 d-flex flex-column align-items-center'>
+              <div className='col-6 d-flex flex-column align-items-center justify-content-between'>
                 <h6 className='text-center font-fam'>Years Experience</h6>
                 <h2>5 Years</h2>
               </div>
-              <div className='col-6 d-flex flex-column align-items-center'>
+              <div className='col-6 d-flex flex-column align-items-center justify-content-between'>
                 <h6 className='text-center font-fam'>Employees</h6>
                 <h2>40+</h2>
               </div>
-              <div className='col-6 d-flex flex-column align-items-center'>
+              <div className='col-6 d-flex flex-column align-items-center justify-content-between'>
                 <h6 className='text-center font-fam'>Awards</h6>
                 <h2>50+</h2>
               </div>
-              <div className='col-6 d-flex flex-column align-items-center'>
+              <div className='col-6 d-flex flex-column align-items-center justify-content-between'>
                 <h6 className='text-center font-fam'>Cases</h6> 
                 <h2>450+</h2>                
               </div>

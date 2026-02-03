@@ -25,19 +25,19 @@ export default function AboutPage() {
         <div className='container d-flex flex-column gap-5 text-white text-center py-5 px-4 px-md-5'>
             <h2 className='font-fam'>Achievements</h2>
             <div className='row g-5'>
-                <div className='col-6 col-md-3'>
+                <div className='col-6 col-md-3 d-flex flex-column justify-content-between'>
                     <h6 className='font-fam'>Cases</h6>
                     <span className='fs-2'>450+</span>
                 </div>
-                <div className='col-6 col-md-3'>
+                <div className='col-6 col-md-3 d-flex flex-column justify-content-between'>
                     <h6 className='font-fam'>Awards</h6>
                     <span className='fs-2'>50+</span>
                 </div>
-                <div className='col-6 col-md-3'>
+                <div className='col-6 col-md-3 d-flex flex-column justify-content-between'>
                     <h6 className='font-fam'>Trusted Client</h6>
                     <span className='fs-2'>300+</span>
                 </div>
-                <div className='col-6 col-md-3'>
+                <div className='col-6 col-md-3 d-flex flex-column justify-content-between'>
                     <h6 className='font-fam'>Client Satisfaction</h6>
                     <span className='fs-2'>96%</span>
                 </div>
