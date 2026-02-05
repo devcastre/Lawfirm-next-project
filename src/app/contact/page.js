@@ -18,32 +18,25 @@ export default function ContactUsPage() {
 
         const { name, value } = e.target;
         setForm(prev => ({ ...prev, [name]: value }));
-        
+
     };
 
 
 
     const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-        const res = await fetch('https://script.google.com/macros/s/AKfycbwb2xgHpqzp78NKnlkd3wUrnG45W73_CP8VDOqiKaZ7t1E0WB6P-uGuWLYQaf7ylrmTgw/exec', {
-        method: 'POST',
-        body: JSON.stringify(form),
-        headers: { 'Content-Type': 'application/json' },
+        
+        e.preventDefault();
+        await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            name,
+            email,
+            contact,
+            message,
+        }),
         });
 
-        const data = await res.json();
-        if (data.status === 'success') {
-        alert('Form submitted successfully!');
-        setForm({ name: '', email: '', contact: '', message: '' });
-        } else {
-        alert('Error: ' + data.message);
-        }
-    } catch (err) {
-        console.error(err);
-        alert('Something went wrong');
-    }
     };
 
 
