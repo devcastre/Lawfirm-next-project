@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       
-      <body className={`${robotoSerif.variable} ${poppins.variable} d-flex flex-column align-items-center min-vh-100`}>
+      <body className={`${robotoSerif.variable} ${poppins.variable} d-flex flex-column align-items-center`}>
 
         <BootstrapJSClient/>
 
