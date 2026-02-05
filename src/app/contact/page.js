@@ -27,7 +27,7 @@ export default function ContactUsPage() {
         
         e.preventDefault();
         
-        await fetch("/api/contact", {
+        await fetch("/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -37,7 +37,7 @@ export default function ContactUsPage() {
             message: form.message,
         }),
         });
-        
+
     };
 
 
