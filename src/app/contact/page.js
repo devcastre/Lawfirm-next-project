@@ -27,7 +27,7 @@ export default function ContactUsPage() {
         
         e.preventDefault();
         
-        await fetch("/contact", {
+        await fetch("/config", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
