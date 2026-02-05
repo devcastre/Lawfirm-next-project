@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 
 import { Roboto_Serif, Poppins } from "next/font/google";
-// import Script from 'next/script';
 import { Navbar } from './Components/Navbar';
 import { Footer } from './Components/Footer';
 import BootstrapJSClient from './BootstrapJSClient';
@@ -34,7 +33,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       
-      <body className={`${robotoSerif.variable} ${poppins.variable} d-flex flex-column align-items-center`}>
+      <body className={`${robotoSerif.variable} ${poppins.variable} d-flex flex-column align-items-center min-vh-100`}>
 
         <BootstrapJSClient/>
 
@@ -43,10 +42,7 @@ export default function RootLayout({ children }) {
         <Footer />
 
 
-        {/* <Script
-          src="/bootstrap.bundle.min.js"
-          strategy="afterInteractive"
-        /> */}
+
       </body>
     
     </html>
