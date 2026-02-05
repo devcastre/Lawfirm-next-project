@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 
 import Image from 'next/image'
 import styles from './contactUs.module.css'
@@ -10,7 +10,42 @@ import styles from './contactUs.module.css'
 
 
 export default function ContactUsPage() {
-    console.log(styles)
+
+    const [form, setForm] = useState({name: '', email: '', contact: '', message: ''});
+
+
+    const handleForm = (e) => {
+
+        const { name, value } = e.target;
+        setForm(prev => ({ ...prev, [name]: value }));
+        
+    };
+
+
+
+    const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+        const res = await fetch('https://script.google.com/macros/s/AKfycbwb2xgHpqzp78NKnlkd3wUrnG45W73_CP8VDOqiKaZ7t1E0WB6P-uGuWLYQaf7ylrmTgw/exec', {
+        method: 'POST',
+        body: JSON.stringify(form),
+        headers: { 'Content-Type': 'application/json' },
+        });
+
+        const data = await res.json();
+        if (data.status === 'success') {
+        alert('Form submitted successfully!');
+        setForm({ name: '', email: '', contact: '', message: '' });
+        } else {
+        alert('Error: ' + data.message);
+        }
+    } catch (err) {
+        console.error(err);
+        alert('Something went wrong');
+    }
+    };
+
 
   return (
     <main className='container d-flex flex-column flex-lg-row justify-content-center align-items-center text-white my-5 gap-4'>
@@ -47,7 +82,7 @@ export default function ContactUsPage() {
                 </div>                
             </div>
         </div>
-        <form className={`d-flex flex-column p-4 m-2 rounded-3 gap-3 ${styles.contactForm}`}>
+        <form className={`d-flex flex-column p-4 m-2 rounded-3 gap-3 ${styles.contactForm}`} onSubmit={handleSubmit}>
         
             
             <div className='d-flex flex-column'>
@@ -56,6 +91,9 @@ export default function ContactUsPage() {
                 </label>
                 <input
                 type="text"
+                name="name" 
+                value={form.name} 
+                onChange={handleForm}
                 placeholder="Firstname - Middlename - Lastname"
                 className={`rounded-1 px-3 py-2 ${styles.contactInput}`}
                 />
@@ -68,6 +106,9 @@ export default function ContactUsPage() {
                 </label>
                 <input
                 type="email"
+                name="email" 
+                value={form.email} 
+                onChange={handleForm}
                 placeholder="youremail@email.com"
                 className={`rounded-1 px-3 py-2 ${styles.contactInput}`}
                 />
@@ -80,6 +121,9 @@ export default function ContactUsPage() {
                 </label>
                 <input
                 type="tel"
+                name="contact" 
+                value={form.contact} 
+                onChange={handleForm}
                 placeholder="0000-000-0000"
                 className={`rounded-1 px-3 py-2 ${styles.contactInput}`}
                 />
@@ -93,6 +137,9 @@ export default function ContactUsPage() {
                 <textarea
                 placeholder="Type anything here"
                 rows={5}
+                name="message" 
+                value={form.message} 
+                onChange={handleForm}
                 className={`rounded-1 px-3 py-2 ${styles.contactTextarea}`}
                 />
             </div>
@@ -101,6 +148,7 @@ export default function ContactUsPage() {
             <button
                 type="submit"
                 className={`rounded-1 px-4 py-3 text-white ${styles.contactSubmit}`}
+  
             >
                 Send Message
             </button>
