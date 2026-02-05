@@ -26,17 +26,18 @@ export default function ContactUsPage() {
     const handleSubmit = async (e) => {
         
         e.preventDefault();
+        
         await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-            name,
-            email,
-            contact,
-            message,
+            name: form.name,
+            email: form.email,
+            contact: form.contact,
+            message: form.message,
         }),
         });
-
+        
     };
 
 
