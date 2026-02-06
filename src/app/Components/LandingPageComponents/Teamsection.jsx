@@ -26,7 +26,7 @@ export function Teamsection() {
   const moreLawyersLink = navLinks.find(link => link.name === 'Team');
 
   return (
-    <div className='container d-flex flex-column text-white my-5 mx-1 mx-sm-3 px-lg-5 gap-5'>
+    <div className='container d-flex flex-column text-white my-5 mx-1 mx-sm-3 px-lg-5 py-5 gap-5'>
       <div className='d-flex flex-row align-items-center justify-content-between'>
         <h1 className='font-fam'>Our Team</h1>
         {moreLawyersLink && (

@@ -10,7 +10,7 @@ export const Aboutsection = () => {
 
 
   return (
-    <div className="container d-flex flex-fill rounded-1 text-white my-5 mx-1 mx-sm-3 px-lg-5">
+    <div className="container d-flex flex-fill rounded-1 text-white my-5 mx-1 mx-sm-3 px-lg-5 py-5">
 
           <div className="row justify-content-center align-items-center gap-5 gap-sm-0">
 

@@ -12,6 +12,7 @@ import styles from './contactUs.module.css'
 export default function ContactUsPage() {
 
     const [form, setForm] = useState({name: '', email: '', contact: '', message: ''});
+    const [status, setStatus] = useState("idle");
 
 
     const handleForm = (e) => {
@@ -27,18 +28,33 @@ export default function ContactUsPage() {
         
         e.preventDefault();
         
-        await fetch("/api/form", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-            name: form.name,
-            email: form.email,
-            contact: form.contact,
-            message: form.message,
-        }),
-        });
-        
-    };
+        setStatus('loading');
+
+        try {
+
+            const res = await fetch("/api/form", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    name: form.name,
+                    email: form.email,
+                    contact: form.contact,
+                    message: form.message,
+                }),
+            });
+
+            if(!res.ok){
+                throw new Error("Request failed");
+            }
+
+            setStatus('success');
+            setForm({name: '', email: '', contact: '', message: ''});
+                    
+        } catch (error) {
+            setStatus('error');
+        }
+    }
+
 
 
   return (
@@ -142,10 +158,25 @@ export default function ContactUsPage() {
             <button
                 type="submit"
                 className={`rounded-1 px-4 py-3 text-white ${styles.contactSubmit}`}
-  
+                disabled={status === "loading"}
             >
-                Send Message
+                {status === "loading" ? "Sending..." : "Send Message"}
             </button>
+
+            {status === "success" && (
+                <p className="text-success mt-3">
+                ✔ Message sent successfully. We’ll get back to you soon.
+                </p>
+            )}
+
+            {status === "error" && (
+                <p className="text-danger mt-3">
+                ⚠ Something went wrong. Please try again.
+                </p>
+            )}
+
+
+
 
         </form>
     </main>

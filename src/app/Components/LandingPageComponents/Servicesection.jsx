@@ -4,7 +4,7 @@ import React from 'react'
 
 export const Servicesection = () => {
   return (
-    <div className='container d-flex flex-column text-white align-items-center my-5 mx-1 mx-sm-3 px-lg-5 gap-5'>
+    <div className='container d-flex flex-column text-white align-items-center my-5 mx-1 mx-sm-3 px-lg-5 py-5 gap-5'>
         <h1 className='font-fam'>Services</h1>
         <div className='row p-3 g-5'>
 
