@@ -17,7 +17,6 @@ export default function LawyerProfilePage() {
     fetch('/data/team.json')
       .then(res => res.json())
       .then(data => {
-        console.log('Fetched lawyers:', data);
         setLawyers(data);
       })
       .catch(err => console.error('Fetch error:', err));
@@ -27,13 +26,13 @@ export default function LawyerProfilePage() {
 
   const lawyer = lawyers.find(lawyer => String(lawyer.id) === String(id));
 
-  console.log('Found lawyer:', lawyer);
+
 
   if (!lawyer) notFound();
 
   const socials = lawyer.socialLinks || [];
 
-  console.log("socials", socials)
+
 
   return (
     <div className='container d-flex flex-column align-items-center m-2 m-md-4'>
