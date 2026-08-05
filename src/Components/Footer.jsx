@@ -4,8 +4,8 @@
 import React from 'react'
 
 import Link from 'next/link';
-import { navLinks, footerLinks, footer2Links } from '../config/links';
-import { firmLinks } from '../config/firmlinks';
+import { navLinks, footerLinks, footer2Links } from '@/config/links';
+import { firmLinks } from '@/config/firmlinks';
 
 
 export const Footer = () => {

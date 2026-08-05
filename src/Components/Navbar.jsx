@@ -7,7 +7,7 @@ import React from 'react'
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { navLinks } from '../config/links';
+import { navLinks } from '@/config/links';
 
 import styles from '../styles/navBar.module.css'
 

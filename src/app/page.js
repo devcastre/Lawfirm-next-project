@@ -1,8 +1,8 @@
 
-import { Aboutsection } from "./Components/LandingPageComponents/Aboutsection";
-import { Hero } from "./Components/LandingPageComponents/Hero";
-import { Servicesection } from "./Components/LandingPageComponents/Servicesection";
-import { Teamsection } from "./Components/LandingPageComponents/Teamsection";
+import { Aboutsection } from "../Components/LandingPageComponents/Aboutsection";
+import { Hero } from "../Components/LandingPageComponents/Hero";
+import { Servicesection } from "../Components/LandingPageComponents/Servicesection";
+import { Teamsection } from "../Components/LandingPageComponents/Teamsection";
 
 
 export default function Home() {
