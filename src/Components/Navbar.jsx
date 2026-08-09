@@ -26,7 +26,7 @@ export const Navbar = () => {
         </Link>
 
         <button
-          className="navbar-toggler"
+          className="navbar-toggler border-0 shadow-none"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"

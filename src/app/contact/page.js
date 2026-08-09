@@ -15,7 +15,7 @@ export default function ContactUsPage() {
         const { name, value } = e.target;
         setForm(prev => ({ ...prev, [name]: value }));
 
-        // clear the error for this field as the user types
+
         if (errors[name]) {
             setErrors(prev => ({ ...prev, [name]: '' }));
         }
@@ -46,7 +46,7 @@ export default function ContactUsPage() {
 
         setErrors(newErrors);
 
-        // valid if there are no keys in newErrors
+
         return Object.keys(newErrors).length === 0;
     };
 
@@ -55,7 +55,7 @@ export default function ContactUsPage() {
 
         if (!validate()) {
             setStatus('idle');
-            return; // stop here, don't send the empty/invalid form
+            return;
         }
 
         setStatus('loading');
