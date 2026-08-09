@@ -88,7 +88,7 @@ export function Teamsection() {
                   src={lawyer.img}
                   alt={lawyer.name}
                   width={375}
-                  height={450}
+                  height={400}
                   className="card-img-top card-img"
                   draggable={false}
                 />
