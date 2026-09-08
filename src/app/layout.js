@@ -6,6 +6,7 @@ import { Roboto_Serif, Poppins } from "next/font/google";
 import { Navbar } from '../Components/Navbar';
 import { Footer } from '../Components/Footer';
 import BootstrapJSClient from './BootstrapJSClient';
+import AOSProvider from './aosCaster';
 
 
 const robotoSerif = Roboto_Serif({
@@ -34,7 +35,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       
       <body className={`${robotoSerif.variable} ${poppins.variable} d-flex flex-column align-items-center`}>
-
+        <AOSProvider />
         <BootstrapJSClient/>
 
         <Navbar />

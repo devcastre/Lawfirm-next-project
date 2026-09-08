@@ -87,7 +87,7 @@ export default function ContactUsPage() {
   return (
     <main className='container d-flex flex-column flex-lg-row justify-content-center align-items-center text-white my-5 gap-4'>
         <div className='d-flex flex-column p-4 m-2'>
-            <h2 className='font-fam'>Start Your Consultation</h2>
+            <h2 className='font-fam' data-aos="fade-up">Start Your Consultation</h2>
             <p>Speak with our legal team today for guidance, support, and clarity on your case.</p>
             <div className='py-4 d-flex flex-column gap-1'>
                 <div className='d-flex flex-row gap-3'>
@@ -119,7 +119,7 @@ export default function ContactUsPage() {
                 </div>                
             </div>
         </div>
-        <form className={`d-flex flex-column p-4 m-2 rounded-3 gap-3 ${styles.contactForm}`} onSubmit={handleSubmit} noValidate>
+        <form className={`d-flex flex-column p-4 m-2 rounded-3 gap-3 ${styles.contactForm}`} onSubmit={handleSubmit} noValidate data-aos="fade-zoom-in">
 
             <div className='d-flex flex-column'>
                 <label className="block text-sm font-medium text-gray-700 mb-1">

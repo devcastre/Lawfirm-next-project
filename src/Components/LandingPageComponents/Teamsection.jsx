@@ -54,10 +54,10 @@ export function Teamsection() {
   return (
     <div className='container d-flex flex-column text-white my-5 mx-1 mx-sm-3 px-lg-5 py-5 gap-5 align-items-center'>
       <div className='d-flex flex-row align-items-center justify-content-between w-100'>
-        <h1 className='font-fam'>Our Team</h1>
+        <h1 className='font-fam' data-aos="fade-up">Our Team</h1>
         {moreLawyersLink && (
           <Link href={moreLawyersLink.href}>
-            <span className='text-white'>More Lawyers</span>
+            <span className='text-white' data-aos="fade-up">More Lawyers</span>
           </Link>
         )}
       </div>
@@ -71,11 +71,13 @@ export function Teamsection() {
         onMouseUp={stopDragging}
         onMouseLeave={stopDragging}
       >
-        {topLawyers.map((lawyer) => (
+        {topLawyers.map((lawyer, index) => (
           <div
             key={lawyer.id}
             className="flex-shrink-0"
             style={{ width: '75%', maxWidth: '260px' }}
+            data-aos="fade-up"
+            data-aos-delay={index * 150}
           >
             <Link
               href={`/team/${lawyer.id}`}
