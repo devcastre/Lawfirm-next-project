@@ -22,11 +22,17 @@ export default function TeamPage() {
   return (
     <main className='container d-flex flex-column align-items-center m-2 m-md-4'>
       <div className='container d-flex flex-column text-white my-5 mx-1 mx-sm-3 px-lg-5 gap-5'>
-        <h1 className='font-fam'>Our Team</h1>
+        <h1 className='font-fam' data-aos="fade" data-aos-duration="1500">Our Team</h1>
         
         <div className='row g-3 justify-content-center justify-content-lg-start'>
-          {lawyers.map((lawyer) => (
-            <div key={lawyer.id} className="col-6 col-md-4 col-lg-3">
+          {lawyers.map((lawyer, index) => (
+            <div 
+              key={lawyer.id} 
+              className="col-6 col-md-4 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
+              >
+
               <Link href={`/team/${lawyer.id}`} className="text-decoration-none">
                 <div className={`card w-100 border-0 position-relative overflow-hidden ${styles.cardContainer}`}>
                   <Image
@@ -42,6 +48,7 @@ export default function TeamPage() {
                   </div>
                 </div>
               </Link>
+
             </div>
           ))}
         </div>

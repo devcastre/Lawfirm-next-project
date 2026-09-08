@@ -87,8 +87,8 @@ export default function ContactUsPage() {
   return (
     <main className='container d-flex flex-column flex-lg-row justify-content-center align-items-center text-white my-5 gap-4'>
         <div className='d-flex flex-column p-4 m-2'>
-            <h2 className='font-fam' data-aos="fade-up">Start Your Consultation</h2>
-            <p>Speak with our legal team today for guidance, support, and clarity on your case.</p>
+            <h2 className='font-fam' data-aos="fade-up" data-aos-duration="1500">Start Your Consultation</h2>
+            <p data-aos="fade-up" data-aos-duration="1500">Speak with our legal team today for guidance, support, and clarity on your case.</p>
             <div className='py-4 d-flex flex-column gap-1'>
                 <div className='d-flex flex-row gap-3'>
                     <Image
@@ -96,8 +96,9 @@ export default function ContactUsPage() {
                         alt='location'
                         width={30}
                         height={30}
+                        data-aos="fade-up" data-aos-delay="200"
                     />
-                    <span>Epuladaug, Itakam, Metro Manila</span>
+                    <span data-aos="fade-up" data-aos-delay="300">Epuladaug, Itakam, Metro Manila</span>
                 </div>
                 <div className='d-flex flex-row gap-3'>
                     <Image
@@ -105,8 +106,9 @@ export default function ContactUsPage() {
                         alt='phone-number'
                         width={30}
                         height={30}
+                        data-aos="fade-up" data-aos-delay="500"
                     />
-                    <span>(02) 8123 4567</span>
+                    <span data-aos="fade-up" data-aos-delay="600">(02) 8123 4567</span>
                 </div>
                 <div className='d-flex flex-row gap-3'>
                     <Image
@@ -114,12 +116,13 @@ export default function ContactUsPage() {
                         alt='email'
                         width={30}
                         height={30}
+                        data-aos="fade-up" data-aos-delay="800"
                     />
-                    <span>Lawfulfill@gmail.com</span>
+                    <span data-aos="fade-up" data-aos-delay="900">Lawfulfill@gmail.com</span>
                 </div>                
             </div>
         </div>
-        <form className={`d-flex flex-column p-4 m-2 rounded-3 gap-3 ${styles.contactForm}`} onSubmit={handleSubmit} noValidate data-aos="fade-zoom-in">
+        <form className={`d-flex flex-column p-4 m-2 rounded-3 gap-3 ${styles.contactForm}`} onSubmit={handleSubmit} noValidate data-aos="fade-zoom-in" data-aos-duration='1500'>
 
             <div className='d-flex flex-column'>
                 <label className="block text-sm font-medium text-gray-700 mb-1">

@@ -10,7 +10,7 @@ import styles from "./accordion.module.css"
 export const Accordion = () => {
   return (
     <div className="accordion accordion-flush" id="accordionFlushExample">
-        <div className={`accordion-item ${styles.accordionItem}`}>
+        <div className={`accordion-item ${styles.accordionItem}`} data-aos='fade-right'>
             <h2 className="accordion-header">
                 <button className={`accordion-button collapsed ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     Corporate & Business Law
@@ -36,7 +36,7 @@ export const Accordion = () => {
                 </div>
             </div>
         </div>
-        <div className={`accordion-item ${styles.accordionItem}`}>
+        <div className={`accordion-item ${styles.accordionItem}`} data-aos='fade-right' data-aos-delay='300'>
             <h2 className="accordion-header">
                 <button className={`collapsed accordion-button ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                     Family Law
@@ -59,7 +59,7 @@ export const Accordion = () => {
                 </div>
             </div>
         </div>
-        <div className={`accordion-item ${styles.accordionItem}`}>
+        <div className={`accordion-item ${styles.accordionItem}`} data-aos='fade-right' data-aos-delay='600'>
             <h2 className="accordion-header">
                 <button className={`collapsed accordion-button ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                     Criminal Defense
@@ -82,7 +82,7 @@ export const Accordion = () => {
                 </div>
             </div>
         </div>
-        <div className={`accordion-item ${styles.accordionItem}`}>
+        <div className={`accordion-item ${styles.accordionItem}`} data-aos='fade-right' data-aos-delay='900'>
             <h2 className="accordion-header">
                 <button className={`collapsed accordion-button ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                     Real Estate Law
@@ -105,7 +105,7 @@ export const Accordion = () => {
                 </div>
             </div>
         </div>
-        <div className={`accordion-item ${styles.accordionItem}`}>
+        <div className={`accordion-item ${styles.accordionItem}`} data-aos='fade-right' data-aos-delay='1200'>
             <h2 className="accordion-header">
                 <button className={`collapsed accordion-button ${styles.accordionButton}`} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                     Intellectual Property Law
